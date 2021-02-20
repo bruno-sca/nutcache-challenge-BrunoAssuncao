@@ -90,7 +90,7 @@ function PeopleForm(props) {
           options={teamsList}
           textField="text"
           valueField="value"
-          placeholder="Time"
+          placeholder="Equipe"
         />
       </div>
 
