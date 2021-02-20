@@ -20,7 +20,7 @@ Yarn or npm is required to run this project.
 
 ### API Error
 
-The crudcrud.com api has a limit of 100 request a day. If this  is reached, follow the following instructions.
+The crudcrud.com api has a limit of 100 request a day. If this limit is reached, follow the following instructions.
 
 1. Go to https://crudcrud.com/
 2. Copy the API url
