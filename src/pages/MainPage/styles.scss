@@ -1,0 +1,40 @@
+section.app-container {
+  min-height: calc(100vh - 80px);
+  width: 100%;
+
+  padding: 2rem 1rem 1rem 1rem;
+
+  & .people-cards-header-container {
+    h4 {
+      margin: 7px 0;
+      vertical-align: middle;
+    }
+    & .add-people-btn {
+      font-weight: 500;
+      border-radius: 2rem;
+    }
+  }
+
+  & div.people-cards-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1120px) {
+  section.app-container {
+    & div.people-cards-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  section.app-container {
+    & div.people-cards-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

@@ -1,0 +1,148 @@
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+}
+
+button,
+[class*='btn'] {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.form-group {
+  margin-bottom: 1.3rem;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.form-focus {
+  height: 50px;
+  position: relative;
+}
+
+.form-focus .focus-label {
+  font-size: 14px;
+  font-weight: 400;
+  pointer-events: none;
+  position: absolute;
+  -webkit-transform: translate3d(0, 22px, 0) scale(1);
+  -ms-transform: translate3d(0, 22px, 0) scale(1);
+  -o-transform: translate3d(0, 22px, 0) scale(1);
+  transform: translate3d(0, 22px, 0) scale(1);
+  transform-origin: left top;
+  transition: 240ms;
+  left: 12px;
+  top: -8px;
+  color: #b8b8b8;
+  margin-bottom: 0;
+}
+
+.form-focus.focused .focus-label {
+  opacity: 1;
+  top: -18px;
+  font-size: 12px;
+}
+
+.form-focus .form-control:focus ~ .focus-label,
+.form-focus .form-control:not(:placeholder-shown) ~ .focus-label,
+.form-focus .form-control:-webkit-autofill ~ .focus-label {
+  opacity: 1;
+  font-weight: 400;
+  top: -18px;
+  font-size: 12px;
+}
+
+.form-focus .form-control {
+  height: 50px;
+  padding: 21px 12px 6px;
+}
+
+.form-focus .form-control::-webkit-input-placeholder {
+  color: transparent;
+  transition: 240ms;
+}
+
+.form-focus .form-control:focus::-webkit-input-placeholder {
+  transition: none;
+}
+
+.form-focus.focused .form-control::-webkit-input-placeholder {
+  color: #bbb;
+}
+
+.form-control.error {
+  border-color: red;
+}
+
+span[id*='input_error'] {
+  position: absolute;
+  bottom: -15px;
+  left: 5px;
+  font-size: 10px;
+  color: red;
+}
+
+.form-focus.select-focus .focus-label {
+  opacity: 1;
+  font-weight: 300;
+  top: -20px;
+  font-size: 12px;
+}
+
+.show-pass-btn i {
+  height: 20px;
+  width: 20px;
+  font-size: 20px;
+}
+
+.react-datepicker__input-container,
+.react-datepicker-wrapper {
+  width: 100% !important;
+}
+
+.form-focus #rw_18_input,
+.form-focus .dropdown-list-select,
+.form-focus .rw-dropdown-list.rw-widget,
+.form-focus .rw-widget-input.rw-widget-picker.rw-widget-container {
+  height: 50px !important;
+}
+
+.error .rw-widget-input.rw-widget-picker.rw-widget-container {
+  border-color: red;
+}
+
+.rw-input-reset {
+  height: 47.86px !important;
+}
+
+.form-focus.not-empty .focus-label {
+  top: -18px;
+  font-size: 12px;
+}
+
+.form-focus .rw-dropdown-list .rw-dropdown-list-input.rw-input {
+  padding: 21px 12px 6px;
+}
+
+.rw-open .focus-label {
+  top: -18px;
+  font-size: 12px;
+}
